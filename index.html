@@ -5,12 +5,14 @@
     <title>Code and Decode</title>
 </head>
 <body>
-    <label for="text_input">Write a text here: </label>
-    <input type="text" name="text_input" id="text_input">
-    <button type="submit" onclick="codeBtn()">Code</button>
-    <button type="submit" onclick="decodeBtn()">Decode</button>
-    <div id="output"></div>
-    <div id="second_output"></div>
+    <main>
+        <label for="text_input">Write a text here: </label>
+        <input type="text" name="text_input" id="text_input">
+        <button type="submit" onclick="codeBtn()">Code</button>
+        <button type="submit" onclick="decodeBtn()">Decode</button>
+        <button onclick="copyBtn()">Copy</button>
+        <div id="output"></div>
+    </main>
 
     <script src="./script.js"></script>
 </body>
