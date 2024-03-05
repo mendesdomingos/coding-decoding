@@ -1,0 +1,104 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+// Variables
+$background: #A3B18A;
+$card: #588157;
+$text-color: #FEF9FF;
+$button-background-color: #3A5A40;
+$button-hover: #20372b;
+
+// Simple Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+// Styling Content
+
+body {
+    background-color: $background;
+    background-image: url(./wave_background.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .card {
+        width: 330px;
+        height: 425px;
+        background-color: $card;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 0.5em;
+    }
+}
+
+label {
+    color: $text-color;
+}
+
+.separate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 25px;
+    border: none;
+    text-align: center;
+    background-color: $button-background-color;
+    color: $text-color;
+    border-radius: 0.5em;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: $button-hover;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: $button-background-color;
+}
+
+#output {
+    color: $text-color;
+    overflow: auto;
+    width: 220px;
+    height: 120px;
+    overflow-y: auto;
+    line-break: anywhere;
+}
+
+p {
+    color: $text-color;
+}
+
+input {
+    border: none;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+input:focus {
+    outline-style: none;
+}

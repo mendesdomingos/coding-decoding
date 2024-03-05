@@ -41,3 +41,11 @@ function copyBtn() {
             console.error("Error trying to copy")
         });
 }
+
+function clearBtn() {
+    let output = document.getElementById("output");
+    let input_box = document.querySelector("#text_input");
+    output.textContent = "";
+    input_box.value = "";
+}
+  

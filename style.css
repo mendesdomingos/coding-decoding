@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #A3B18A;
+  background-image: url(./wave_background.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main .card {
+  width: 330px;
+  height: 425px;
+  background-color: #588157;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 0.5em;
+}
+
+label {
+  color: #FEF9FF;
+}
+
+.separate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  text-align: center;
+  background-color: #3A5A40;
+  color: #FEF9FF;
+  border-radius: 0.5em;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  background-color: #20372b;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #3A5A40;
+}
+
+#output {
+  color: #FEF9FF;
+  overflow: auto;
+  width: 220px;
+  height: 120px;
+  overflow-y: auto;
+  line-break: anywhere;
+}
+
+p {
+  color: #FEF9FF;
+}
+
+input {
+  border: none;
+  width: 200px;
+  height: 35px;
+  text-align: center;
+  border-radius: 0.5em;
+}
+
+input:focus {
+  outline-style: none;
+}

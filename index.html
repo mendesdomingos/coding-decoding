@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
     <title>Code and Decode</title>
 </head>
+
 <body>
     <main>
-        <label for="text_input">Write a text here: </label>
-        <input type="text" name="text_input" id="text_input">
-        <button type="submit" onclick="codeBtn()">Code</button>
-        <button type="submit" onclick="decodeBtn()">Decode</button>
-        <button onclick="copyBtn()">Copy</button>
-        <div id="output"></div>
+        <div class="card">
+            <label for="text_input">Write a text here: </label>
+            <input type="text" name="text_input" id="text_input">
+            <div class="separate">
+                <button type="submit" onclick="codeBtn()">Code</button>
+                <button type="submit" onclick="decodeBtn()">Decode</button>
+                <button onclick="copyBtn()">Copy</button>
+                <button onclick="clearBtn()">Clear</button>
+            </div>
+            <p>Result:</p>
+            <div id="output"></div>
+        </div>
     </main>
 
     <script src="./script.js"></script>
 </body>
+
 </html>
