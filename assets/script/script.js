@@ -1,3 +1,7 @@
+function accentRemoval(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f\ ]/g, "");
+}
+
 function codeBtn() {
     let output_save = document.querySelector("#text_input").value.toLowerCase();
     if (output_save !== "") {
@@ -7,6 +11,7 @@ function codeBtn() {
             .replace(/u/g, "suh")
             .replace(/o/g, "jin")
             .replace(/e/g, "boh");
+        output_coded = accentRemoval(output_coded);
         let result = document.getElementById("output");
         result.innerText = output_coded;
     } else {
@@ -23,6 +28,7 @@ function decodeBtn() {
             .replace(/suh/g, "u")
             .replace(/jin/g, "o")
             .replace(/boh/g, "e");
+        output_decoded = accentRemoval(output_decoded);
         let result = document.getElementById("output");
         result.innerText = output_decoded;
     } else {
@@ -36,7 +42,7 @@ function copyBtn() {
     navigator.clipboard.writeText(textCopied)
         .then(() => {
             console.log("Text copied with success!")
-    })
+        })
         .catch(err => {
             console.error("Error trying to copy")
         });
@@ -48,4 +54,3 @@ function clearBtn() {
     output.textContent = "";
     input_box.value = "";
 }
-  

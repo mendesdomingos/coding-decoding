@@ -1,4 +1,4 @@
-# _Conding and Deconding_
+# _Coding and Deconding_
 
 I wanted to create a unique approach to encryption, similar to cryptography, but with a custom twist.
 

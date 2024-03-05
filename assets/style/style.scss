@@ -32,6 +32,8 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+    gap: 20px;
 
     .card {
         width: 330px;
@@ -45,6 +47,10 @@ main {
         box-shadow: 7px 8px 0px 0px black;
         border: 2px solid #252525;
         border-radius: 0.3em;
+    }
+
+    img {
+        width: 70px;
     }
 }
 
