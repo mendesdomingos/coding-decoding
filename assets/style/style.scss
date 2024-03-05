@@ -3,11 +3,11 @@
 
 
 // Variables
-$background: #A3B18A;
-$card: #588157;
-$text-color: #FEF9FF;
-$button-background-color: #3A5A40;
-$button-hover: #20372b;
+$background: #F3BD0E;
+$card: #F3BD0E;
+$text-color: #252525;
+$button-background-color: #FFFFFF;
+$button-hover: #080808;
 
 // Simple Reset
 * {
@@ -21,7 +21,7 @@ $button-hover: #20372b;
 
 body {
     background-color: $background;
-    background-image: url(./wave_background.svg);
+    background-image: url(../images/wave_bg.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -42,12 +42,15 @@ main {
         align-items: center;
         justify-content: center;
         gap: 10px;
-        border-radius: 0.5em;
+        box-shadow: 7px 8px 0px 0px black;
+        border: 2px solid #252525;
+        border-radius: 0.3em;
     }
 }
 
 label {
     color: $text-color;
+    font-weight: 600;
 }
 
 .separate {
@@ -65,17 +68,20 @@ button {
     text-align: center;
     background-color: $button-background-color;
     color: $text-color;
-    border-radius: 0.5em;
     font-size: 0.9rem;
+    border-radius: 0.3em;
+    font-weight: 600;
 }
 
 button:hover {
     background-color: $button-hover;
+    color: white;
     cursor: pointer;
 }
 
 button:active {
     background-color: $button-background-color;
+    color: $text-color;
 }
 
 #output {
@@ -85,20 +91,25 @@ button:active {
     height: 120px;
     overflow-y: auto;
     line-break: anywhere;
+    border-radius: 0.3em;
+    border: 2px solid #25252590;
 }
 
 p {
     color: $text-color;
+    font-weight: 600;
 }
 
 input {
-    border: none;
+    border: 2px solid #25252590;
     width: 200px;
     height: 35px;
     text-align: center;
-    border-radius: 0.5em;
+    background-color: #F3BD0E;
+    border-radius: 0.3em;
 }
 
 input:focus {
     outline-style: none;
+    border: 2px solid #252525;
 }

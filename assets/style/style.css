@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: #A3B18A;
-  background-image: url(./wave_background.svg);
+  background-color: #F3BD0E;
+  background-image: url(../images/wave_bg.svg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -23,17 +23,20 @@ main {
 main .card {
   width: 330px;
   height: 425px;
-  background-color: #588157;
+  background-color: #F3BD0E;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border-radius: 0.5em;
+  box-shadow: 7px 8px 0px 0px black;
+  border: 2px solid #252525;
+  border-radius: 0.3em;
 }
 
 label {
-  color: #FEF9FF;
+  color: #252525;
+  font-weight: 600;
 }
 
 .separate {
@@ -49,42 +52,50 @@ button {
   padding: 10px 25px;
   border: none;
   text-align: center;
-  background-color: #3A5A40;
-  color: #FEF9FF;
-  border-radius: 0.5em;
+  background-color: #FFFFFF;
+  color: #252525;
   font-size: 0.9rem;
+  border-radius: 0.3em;
+  font-weight: 600;
 }
 
 button:hover {
-  background-color: #20372b;
+  background-color: #080808;
+  color: white;
   cursor: pointer;
 }
 
 button:active {
-  background-color: #3A5A40;
+  background-color: #FFFFFF;
+  color: #252525;
 }
 
 #output {
-  color: #FEF9FF;
+  color: #252525;
   overflow: auto;
   width: 220px;
   height: 120px;
   overflow-y: auto;
   line-break: anywhere;
+  border-radius: 0.3em;
+  border: 2px solid rgba(37, 37, 37, 0.5647058824);
 }
 
 p {
-  color: #FEF9FF;
+  color: #252525;
+  font-weight: 600;
 }
 
 input {
-  border: none;
+  border: 2px solid rgba(37, 37, 37, 0.5647058824);
   width: 200px;
   height: 35px;
   text-align: center;
-  border-radius: 0.5em;
+  background-color: #F3BD0E;
+  border-radius: 0.3em;
 }
 
 input:focus {
   outline-style: none;
+  border: 2px solid #252525;
 }
